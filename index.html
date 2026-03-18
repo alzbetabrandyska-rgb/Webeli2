@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Zákaz indexace -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- SEO – Title & Description -->
+  <title>Webeli – tvorba webů a online podpora pro podnikatele</title>
+  <meta name="description" content="Webeli – tvorba webových stránek a online podpora pro podnikatele. Pomáhám s weby, e-maily, kalendářem a dalšími online úkoly, aby vám zbylo víc času na to podstatné.">
+  <meta name="author" content="Bc. Alžběta Brandýská">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="Obrazky/favicon2/favicon.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.webeli.cz/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Webeli – tvorba webů a online podpora pro podnikatele">
+  <meta property="og:description" content="Pomáhám podnikatelům s tvorbou webů a každodenní online podporou, aby jim zbylo víc času na to podstatné.">
+  <meta property="og:url" content="https://www.webeli.cz/">
+  <meta property="og:site_name" content="Webeli">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:image" content="https://www.webeli.cz/Obrazky/Hlavni/final%20hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Webeli – tvorba webů a online podpora pro podnikatele">
+  <meta name="twitter:description" content="Pomáhám podnikatelům s tvorbou webů a každodenní online podporou.">
+
+  <!-- Fonty -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=19.9">
+
+  <!-- Strukturovaná data – LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Webeli",
+    "description": "Tvorba webových stránek a online podpora pro podnikatele",
+    "url": "https://www.webeli.cz",
+    "email": "eli@webeli.cz",
+    "telephone": "+420605191772",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Oldřiš 76",
+      "addressLocality": "Borová u Poličky",
+      "postalCode": "569 82",
+      "addressCountry": "CZ"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Bc. Alžběta Brandýská"
+    },
+    "taxID": "11793155",
+    "priceRange": "od 2 500 Kč"
+  }
+  </script>
+
+  <!-- Strukturovaná data – FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Musím mít připravené texty a obsah pro web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dobré je mít základní texty a představu o obsahu připravené, aby práce na webu mohla plynule pokračovat. Pokud je ale ještě nemáte, ráda pomohu s jejich uspořádáním a strukturou."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak dlouho trvá vytvoření webu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Záleží na rozsahu projektu a připravenosti obsahu. Jednodušší weby obvykle vznikají během několika týdnů."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Co když potřebuji jen krátkodobou online pomoc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Online asistence může probíhat formou hodinových balíčků podle aktuální potřeby."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Je možné web později upravovat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ano, web je možné kdykoliv upravit nebo rozšířit podle toho, jak se vaše podnikání bude vyvíjet."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       HEADER – logo a navigace
+       ==================================================================== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="logo" aria-label="Webeli – zpět na úvod">
+        <img src="Obrazky/logo2/logo2-.svg" alt="Webeli logo" width="44" height="44">
+        <span class="logo-text">
+          <span class="logo-tagline">weby a&nbsp;online podpora</span>
+        </span>
+      </a>
+
+      <!-- Desktop navigace -->
+      <nav class="nav" aria-label="Hlavní navigace">
+        <ul class="nav-list">
+          <li><a href="#sluzby" class="nav-link">Služby</a></li>
+          <li><a href="#spoluprace" class="nav-link">Spolupráce</a></li>
+          <li><a href="#o-mne" class="nav-link">O&nbsp;mně</a></li>
+          <li><a href="#ceny" class="nav-link">Ceny</a></li>
+          <li><a href="#kontakt" class="nav-link nav-link--cta">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger menu -->
+      <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobilní menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a href="#sluzby" class="mobile-menu-link">Služby</a></li>
+        <li><a href="#spoluprace" class="mobile-menu-link">Spolupráce</a></li>
+        <li><a href="#o-mne" class="mobile-menu-link">O&nbsp;mně</a></li>
+        <li><a href="#ceny" class="mobile-menu-link">Ceny</a></li>
+        <li><a href="#kontakt" class="mobile-menu-link">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- ====================================================================
+       HERO SEKCE
+       ==================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="Obrazky/hero2/hero2.jpg" alt="Bílý notebook na pařezu v přírodě" width="1920" height="1080" fetchpriority="high">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Klid v&nbsp;podnikání</h1>
+      <p class="hero-subtitle">Aby vám zbylo více času na&nbsp;to&nbsp;podstatné</p>
+      <div class="hero-cta-group">
+        <a href="#sluzby" class="btn btn-primary">Zobrazit služby</a>
+        <a href="#kontakt" class="btn btn-hero-secondary">Nezávazná konzultace</a>
+      </div>
+    </div>
+    <a href="#sluzby" class="hero-scroll" aria-label="Přejít na obsah">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+  </section>
+
+  <!-- ====================================================================
+       SLUŽBY
+       ==================================================================== -->
+  <section class="section services" id="sluzby">
+    <div class="container text-center">
+      <span class="section-label fade-in">Služby</span>
+      <h2 class="fade-in">S&nbsp;čím vám mohu pomoci</h2>
+    </div>
+    <div class="container">
+      <div class="services-grid">
+
+        <!-- Tvorba webů -->
+        <div class="service-card fade-in">
+          <div class="service-card-icon-wrap">
+            <svg class="service-card-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Tvorba webů</h3>
+          <ul class="service-list">
+            <li>jednostránkové i&nbsp;vícestránkové weby</li>
+            <li>webová vizitka pro jednoduchou prezentaci</li>
+            <li>přehledná struktura a&nbsp;uspořádání obsahu</li>
+            <li>web přizpůsobený pro mobilní zařízení</li>
+            <li>rychlý a&nbsp;spolehlivý chod webu</li>
+            <li>základní nastavení SEO pro lepší dohledatelnost</li>
+            <li>další úpravy podle potřeby</li>
+          </ul>
+        </div>
+
+        <!-- Online podpora -->
+        <div class="service-card fade-in">
+          <div class="service-card-icon-wrap">
+            <svg class="service-card-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Online podpora pro vaše podnikání</h3>
+          <ul class="service-list">
+            <li>zákaznická podpora</li>
+            <li>správa e-mailů</li>
+            <li>organizace kalendáře a&nbsp;schůzek</li>
+            <li>úprava textů a&nbsp;dokumentů</li>
+            <li>jednoduché grafické úpravy</li>
+            <li>další online úkoly podle potřeby</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       VIZUÁLNÍ PÁS – doplňkové fotografie
+       ==================================================================== -->
+  <div class="visual-break" aria-hidden="true">
+    <div class="visual-break-img">
+      <img src="Obrazky/doplnkové2/outdoor-work.jpg" alt="" loading="lazy">
+    </div>
+    <div class="visual-break-img">
+      <img src="Obrazky/doplnkové2/sleek-modern-office-desk-with-laptop-morning-coffee-break-professional-workspace-concept.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       SPOLUPRÁCE
+       ==================================================================== -->
+  <section class="section cooperation" id="spoluprace">
+    <div class="container text-center">
+      <span class="section-label fade-in">Spolupráce</span>
+      <h2 class="fade-in">Jak probíhá</h2>
+    </div>
+    <div class="container">
+      <div class="cooperation-grid">
+
+        <div class="cooperation-step fade-in">
+          <div class="step-number">1</div>
+          <h3>Nejprve si vše v&nbsp;klidu projdeme</h3>
+          <p>Podíváme se na&nbsp;to, co&nbsp;potřebujete a&nbsp;s&nbsp;čím vám mohu pomoci.</p>
+        </div>
+
+        <div class="cooperation-step fade-in">
+          <div class="step-number">2</div>
+          <h3>Domluvíme se na&nbsp;dalším postupu</h3>
+          <p>Společně nastavíme rozsah spolupráce tak, aby vám dával smysl.</p>
+        </div>
+
+        <div class="cooperation-step fade-in">
+          <div class="step-number">3</div>
+          <h3>Začneme s&nbsp;realizací</h3>
+          <p>Postarám se o&nbsp;domluvené věci, aby vám online část podnikání nezabírala zbytečně čas a&nbsp;energii.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       O MNĚ
+       ==================================================================== -->
+  <section class="section about" id="o-mne">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <!-- Fotografie -->
+        <div class="about-image-wrapper fade-in">
+          <img class="about-image" src="Obrazky/Omne/alzbeta.jpg" alt="Alžběta Brandýská – portét" width="600" height="800" loading="lazy">
+          <svg class="about-badge" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <path id="badge-circle" d="M70,70 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/>
+            </defs>
+            <text font-family="'Source Sans 3', sans-serif" font-size="12" fill="#3e4c45" letter-spacing="3.2">
+              <textPath href="#badge-circle">· tvorba webů · webeli · online podpora</textPath>
+            </text>
+          </svg>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text fade-in">
+          <span class="section-label">O&nbsp;mně</span>
+          <h2 class="about-heading">Inspiraci nacházím v&nbsp;přírodě</h2>
+          <p>Jmenuji se Alžběta a&nbsp;pomáhám podnikatelům s&nbsp;online částí jejich práce, od&nbsp;tvorby webu po&nbsp;každodenní podporu, aby jim zůstal prostor na&nbsp;podnikání i&nbsp;život. Nejčastěji spolupracuji s&nbsp;menšími podnikateli a&nbsp;projekty, kteří na&nbsp;online věci nemají čas nebo se chtějí soustředit na&nbsp;svou hlavní práci.</p>
+          <p>Blízká je mi jednoduchost, klid a&nbsp;přirozený řád. Inspiraci často nacházím v&nbsp;přírodě, kde věci fungují v&nbsp;rovnováze a&nbsp;tichém bytí. Stejný přístup se snažím přinášet i&nbsp;do&nbsp;práce s&nbsp;klienty.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       REFERENCE
+       ==================================================================== -->
+  <section class="section testimonials" id="reference">
+    <div class="container text-center">
+      <span class="section-label fade-in">Reference</span>
+      <h2 class="fade-in">Co o spolupráci říkají klienti</h2>
+    </div>
+    <div class="container">
+      <div class="testimonials-layout">
+
+        <!-- Řádek 1: dvě reference online podpora -->
+        <div class="testimonials-row-top">
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-quote-icon" aria-hidden="true">❝</div>
+            <p class="testimonial-text">Alžběta mi pomohla s&nbsp;grafickým návrhem dle mého přání. Výborná komunikace, flexibilita a&nbsp;hlavně esteticky krásný výsledek.</p>
+            <p class="testimonial-author">Veronika Řeháková</p>
+            <p class="testimonial-role">vyučující a&nbsp;lektorka</p>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-quote-icon" aria-hidden="true">❝</div>
+            <p class="testimonial-text">Alžběta pro mě připravovala výukové podklady k&nbsp;mému online kurzu Vibe Codingu (tvorba webů pomocí AI). S&nbsp;její prací jsem byla velmi spokojená. Vyšla mi vstříc časově, pochopila snadno zadání a&nbsp;hned se pustila do&nbsp;práce, kterou odvedla rychle, samostatně, pečlivě a&nbsp;spolehlivě. Můžu vřele doporučit.</p>
+            <p class="testimonial-author">Magdaléna Boušková</p>
+            <p class="testimonial-role">Weby kvalitně</p>
+          </div>
+
+        </div>
+
+        <!-- Řádek 2: reference + ukázka webu v jedné kartě -->
+        <div class="testimonials-row-bottom">
+
+          <div class="testimonial-project-card fade-in">
+
+            <div class="testimonial-project-quote">
+              <div class="testimonial-quote-icon" aria-hidden="true">❝</div>
+              <p class="testimonial-text">Rozhodnutí mít své webové stránky jsem dlouho odkládala, ale výsledek mne moc mile překvapil. Stránky byly tvořeny s&nbsp;porozuměním a&nbsp;profesionalitou a&nbsp;zcela vystihly to, co&nbsp;jsem si přála, ukázat lásku k&nbsp;lokálním květinám. Doporučuji, protože Alžbětka je skvělá a&nbsp;komunikace s&nbsp;ní výborná.</p>
+              <p class="testimonial-author">Radomíra Charvátová</p>
+              <p class="testimonial-role">Roztroušené kytičky</p>
+            </div>
+
+            <div class="testimonial-project-preview">
+              <span class="project-label">Realizace webu</span>
+              <div class="project-preview-window">
+                <img src="Obrazky/screencapture/roztrousene-kyticky-screenshot.jpg" class="project-screenshot" alt="Náhled webu Roztroušené kytičky" loading="lazy">
+              </div>
+              <a href="https://roztrousenekyticky.cz/" target="_blank" rel="noopener" class="btn btn-primary project-link">Zobrazit web</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CENY
+       ==================================================================== -->
+  <section class="section pricing" id="ceny">
+    <div class="container text-center">
+      <span class="section-label fade-in">Ceny</span>
+      <h2 class="fade-in">Orientační ceny</h2>
+    </div>
+    <div class="container">
+      <div class="pricing-grid">
+
+        <!-- Tvorba webů -->
+        <div class="pricing-card pricing-card--featured fade-in">
+          <h3>Tvorba webů</h3>
+          <p>Při tvorbě webů využívám pokročilé nástroje, ale dbám na&nbsp;to, aby web zůstal autentický a&nbsp;přirozeně vyjadřoval podnikání člověka, který za&nbsp;ním stojí.</p>
+          <p>Každý web je trochu jiný, proto cenu domlouváme individuálně podle rozsahu projektu.</p>
+          <div class="pricing-items">
+            <div class="pricing-item">
+              <span class="pricing-item-label">Jednoduché weby</span>
+              <span class="pricing-item-price">od&nbsp;12&nbsp;000&nbsp;Kč</span>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-item-label">Střední weby</span>
+              <span class="pricing-item-price">od&nbsp;19&nbsp;000&nbsp;Kč</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online asistence -->
+        <div class="pricing-card fade-in">
+          <h3>Online asistence</h3>
+          <p>Spolupráce probíhá vždy individuálně formou hodinových balíčků podle aktuální potřeby.</p>
+          <div class="pricing-items">
+            <div class="pricing-item">
+              <span class="pricing-item-label">5&nbsp;hodin</span>
+              <span class="pricing-item-price">od&nbsp;2&nbsp;500&nbsp;Kč</span>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-item-label">10&nbsp;hodin</span>
+              <span class="pricing-item-price">od&nbsp;5&nbsp;000&nbsp;Kč</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-cta fade-in">
+        <p class="pricing-cta-lead">Nejste si jistí, co je pro vás vhodné?</p>
+        <p class="pricing-cta-body">Ráda s&nbsp;vámi nejdříve proberu váš projekt a&nbsp;společně najdeme řešení, které bude dávat smysl.</p>
+        <a href="#kontakt" class="btn btn-primary pricing-cta-btn">Nezávazná konzultace</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual break -->
+  <div class="visual-break-full" aria-hidden="true">
+    <img src="Obrazky/doplnkové2/woman-working-laptop-overlooking-misty-mountains.jpg" alt="" loading="lazy">
+  </div>
+
+  <!-- ====================================================================
+       OTÁZKY A ODPOVĚDI (FAQ)
+       ==================================================================== -->
+  <section class="section faq" id="faq">
+    <div class="container text-center">
+      <span class="section-label fade-in">FAQ</span>
+      <h2 class="fade-in">Otázky, které často zaznívají</h2>
+    </div>
+    <div class="container">
+      <div class="faq-grid">
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span>Musím mít připravené texty a&nbsp;obsah pro web?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Dobré je mít základní texty a&nbsp;představu o&nbsp;obsahu připravené, aby práce na&nbsp;webu mohla plynule pokračovat. Pokud je ale ještě nemáte, ráda pomohu s&nbsp;jejich uspořádáním a&nbsp;strukturou.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span>Jak dlouho trvá vytvoření webu?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Záleží na&nbsp;rozsahu projektu a&nbsp;připravenosti obsahu. Jednodušší weby obvykle vznikají během několika týdnů.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span>Co když potřebuji jen krátkodobou online pomoc?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Online asistence může probíhat formou hodinových balíčků podle aktuální potřeby.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span>Je možné web později upravovat?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Ano, web je možné kdykoliv upravit nebo rozšířit podle toho, jak se vaše podnikání bude vyvíjet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       KONTAKT
+       ==================================================================== -->
+  <section class="section contact" id="kontakt">
+    <div class="container text-center">
+      <span class="section-label fade-in">Kontakt</span>
+      <h2 class="fade-in">Ozvěte se mi</h2>
+    </div>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Kontaktní informace -->
+        <div class="contact-info fade-in">
+          <p class="contact-name">Bc. Alžběta Brandýská</p>
+
+          <div class="contact-items-list">
+            <div class="contact-item">
+              <svg class="contact-item-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:eli@webeli.cz">eli@webeli.cz</a></div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-item-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <div><a href="tel:+420605191772">+420&nbsp;605&nbsp;191&nbsp;772</a></div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-item-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><p>Oldřiš 76<br>Borová u&nbsp;Poličky, 569&nbsp;82</p></div>
+            </div>
+          </div>
+
+          <div class="contact-legal">
+            <p>IČ: 11793155</p>
+            <p>Fyzická osoba zapsaná v&nbsp;živnostenském rejstříku od&nbsp;1.&nbsp;10.&nbsp;2021</p>
+          </div>
+        </div>
+
+        <!-- Formulář -->
+        <form class="contact-form fade-in" id="contact-form" action="https://formspree.io/f/xvzwdoyk" method="POST">
+
+          <!-- Honeypot – antispam -->
+          <div class="form-honey" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Jméno</label>
+            <input type="text" id="name" name="name" required placeholder="Vaše jméno" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="vas@email.cz" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" required placeholder="Napište mi, s čím vám mohu pomoci…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-contact-submit">Odeslat zprávu</button>
+        </form>
+
+        <!-- Potvrzení po odeslání -->
+        <div class="form-submitted" id="form-success" style="display: none;">
+          <p>Děkuji za zprávu, ozvu se co&nbsp;nejdříve.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ====================================================================
+       PATIČKA
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Webeli</p>
+        <p><a href="#hero">Zpět nahoru</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

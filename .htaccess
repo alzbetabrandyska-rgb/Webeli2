@@ -1,0 +1,32 @@
+# Vlastní chybové stránky
+ErrorDocument 404 /404.html
+
+# Zakázání procházení adresářů (Security)
+Options -Indexes
+
+# Nastavení bezpečnostních hlaviček
+<IfModule mod_headers.c>
+    # Ochrana proti clickjackingu
+    Header always append X-Frame-Options SAMEORIGIN
+    
+    # Aktivace XSS filtru prohlížeče
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Zabránění MIME-sniffing
+    Header set X-Content-Type-Options nosniff
+    
+    # Nastavení Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Caching pro statické soubory (výkon)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/avif "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>

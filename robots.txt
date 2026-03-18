@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.webeli.cz/sitemap.xml
+
+Disallow: /404.html
