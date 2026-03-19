@@ -16,9 +16,9 @@
   --color-primary-dark: #5F6D66;
   --color-primary-darker: #3e4c45;
   --color-text: #333333;
-  --color-heading: #5F6D66;
+  --color-heading: #333333;
   --color-bg: #f7f8f6;
-  --color-bg-alt: #e6ebe7;
+  --color-bg-alt: #eaeeeb;
   --color-bg-warm: #e7ebe8;
   --color-bg-card: #ffffff;
   --color-white: #F4F6F4;
@@ -311,7 +311,7 @@ p {
 }
 
 .logo img {
-  height: 34px;
+  height: 36px;
   width: auto;
   transition: transform var(--transition-base);
 }
@@ -327,7 +327,7 @@ p {
 }
 
 .logo-tagline {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--color-primary-dark);
   font-weight: 400;
   letter-spacing: 0.10em;
@@ -377,11 +377,9 @@ p {
 }
 
 .nav-link--cta {
-  background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(95, 109, 102, 0.55) !important;
-  color: var(--color-primary-darker) !important;
+  background: var(--color-primary-dark) !important;
+  border: none !important;
+  color: #fff !important;
   padding: 0.45rem var(--space-3) !important;
   border-radius: var(--radius-sm);
   font-size: 0.88rem;
@@ -394,8 +392,8 @@ p {
 }
 
 .nav-link--cta:hover {
-  background: rgba(95, 109, 102, 0.30);
-  color: var(--color-primary-darker) !important;
+  background: var(--color-primary-darker) !important;
+  color: #fff !important;
   transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
 }
@@ -560,7 +558,7 @@ p {
 .hero-subtitle {
   color: #FFFFFF;
   font-size: clamp(1.4rem, 3.2vw, 1.9rem);
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: var(--space-5);
   text-shadow: 0 1px 18px rgba(20, 40, 24, 0.68), 0 1px 5px rgba(20, 40, 24, 0.48);
   max-width: 100%;
@@ -568,13 +566,13 @@ p {
 
 .hero .btn-primary {
   background: rgba(255, 255, 255, 0.68);
-  border: 1.5px solid rgba(255, 255, 255, 0.90);
+  border: none;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #1c2b22;
-  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  font-size: clamp(0.78rem, 1.6vw, 0.92rem);
   font-weight: 500;
-  padding: clamp(10px, 1.5vw, 14px) clamp(18px, 2.5vw, 26px);
+  padding: clamp(9px, 1.2vw, 11px) clamp(16px, 2vw, 22px);
   border-radius: 9px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   text-shadow: none;
@@ -602,9 +600,9 @@ p {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--color-white);
-  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  font-size: clamp(0.78rem, 1.6vw, 0.92rem);
   font-weight: 500;
-  padding: clamp(10px, 1.5vw, 14px) clamp(18px, 2.5vw, 26px);
+  padding: clamp(9px, 1.2vw, 11px) clamp(16px, 2vw, 22px);
   border-radius: 9px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   text-shadow: none;
@@ -633,8 +631,8 @@ p {
   .btn-hero-secondary {
     width: 100%;
     text-align: center;
-    font-size: 0.8rem;
-    padding: 11px 18px;
+    font-size: 0.76rem;
+    padding: 9px 16px;
   }
 }
 
@@ -718,10 +716,24 @@ p {
 .service-card {
   background-color: var(--color-bg-card);
   border-radius: var(--radius-md);
-  padding: 32px 36px;
+  padding: 32px 36px 40px;
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(126, 150, 138, 0.32);
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-btn {
+  margin-top: var(--space-5);
+  align-self: flex-start;
+  background: var(--color-primary-dark);
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  font-size: 0.82rem;
+  padding: 9px 22px;
+  letter-spacing: 0.07em;
 }
 
 .service-card:hover {
@@ -996,6 +1008,13 @@ p {
   grid-column: 1 / -1;
 }
 
+@media (min-width: 768px) {
+  .testimonial-project-card {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+}
+
 .testimonial-project-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07);
@@ -1067,6 +1086,10 @@ p {
   font-size: 0.78rem;
   padding: 8px 26px;
   letter-spacing: 0.07em;
+  background: var(--color-primary-dark);
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .project-preview-window {
@@ -1114,7 +1137,6 @@ p {
   align-items: stretch;
 }
 
-/* Desktop: 2 rovné sloupce */
 @media (min-width: 768px) {
   .testimonials-row-top,
   .testimonials-row-bottom {
@@ -1273,6 +1295,10 @@ p {
   font-size: clamp(0.75rem, 1.5vw, 0.88rem);
   padding: clamp(9px, 1.2vw, 11px) clamp(20px, 2.8vw, 28px);
   letter-spacing: 0.07em;
+  background: var(--color-primary-dark);
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 /* ==========================================================================
