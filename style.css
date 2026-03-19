@@ -595,10 +595,10 @@ p {
 }
 
 .btn-hero-secondary {
-  background: transparent;
-  border: 1.5px solid rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: #967e8a;
+  border: 1.5px solid #967e8a;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   color: var(--color-white);
   font-size: clamp(0.78rem, 1.6vw, 0.92rem);
   font-weight: 500;
@@ -749,19 +749,19 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background-color: rgba(107, 122, 114, 0.1);
+  background-color: var(--color-primary);
   margin-bottom: var(--space-2);
   transition: background-color var(--transition-base);
 }
 
 .service-card:hover .service-card-icon-wrap {
-  background-color: rgba(107, 122, 114, 0.18);
+  background-color: var(--color-primary-light);
 }
 
 .service-card-icon {
   width: 32px;
   height: 32px;
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .service-card h3 {
@@ -1295,7 +1295,7 @@ p {
   font-size: clamp(0.75rem, 1.5vw, 0.88rem);
   padding: clamp(9px, 1.2vw, 11px) clamp(20px, 2.8vw, 28px);
   letter-spacing: 0.07em;
-  background: var(--color-primary-dark);
+  background: #967e8a;
   border-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -1329,26 +1329,29 @@ p {
   gap: var(--space-2);
   padding: var(--space-3) var(--space-4);
   cursor: pointer;
-  background: none;
+  background: var(--color-primary);
   border: none;
   width: 100%;
   text-align: left;
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-heading);
+  color: var(--color-white);
   transition: background-color var(--transition-fast);
 }
 
-.faq-question:hover {
-  background-color: var(--color-bg-alt);
+@media (hover: hover) {
+  .faq-question:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+  }
 }
 
 .faq-icon {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: var(--color-primary);
+  color: var(--color-white);
   transition: transform var(--transition-base);
 }
 
