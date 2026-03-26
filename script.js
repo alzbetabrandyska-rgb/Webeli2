@@ -163,4 +163,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Záložky – Služby ---------- */
+  const tabBtns = document.querySelectorAll('.services-tab-btn');
+  const tabPanels = document.querySelectorAll('.services-tab-panel');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('aria-controls');
+
+      tabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      tabPanels.forEach(p => {
+        p.hidden = true;
+      });
+
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById(targetId).hidden = false;
+    });
+  });
+
 });
