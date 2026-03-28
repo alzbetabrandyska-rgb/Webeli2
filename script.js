@@ -185,4 +185,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---------- Testimonial expand ---------- */
+  document.querySelectorAll('.testimonial-card').forEach(card => {
+    const btn = card.querySelector('.testimonial-expand');
+    const extras = card.querySelectorAll('.testimonial-extra');
+    if (!btn || !extras.length) return;
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.classList.toggle('expanded');
+      extras.forEach(el => { el.hidden = !expanded; });
+      btn.querySelector('svg').nextSibling.textContent = expanded ? ' Méně' : ' Číst více';
+    });
+  });
+
 });
