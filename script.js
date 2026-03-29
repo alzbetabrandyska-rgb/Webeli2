@@ -106,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
       questionBtn.addEventListener('click', () => {
         const isOpen = item.classList.contains('active');
 
-        // Zavření všech ostatních
         faqItems.forEach(other => {
           if (other !== item) {
             other.classList.remove('active');
@@ -117,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
 
-        // Toggle aktuálního
         item.classList.toggle('active');
         questionBtn.setAttribute('aria-expanded', !isOpen);
 
@@ -191,11 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const extras = card.querySelectorAll('.testimonial-extra');
     if (!btn || !extras.length) return;
 
-    btn.addEventListener('click', () => {
+    function toggle(e) {
+      e.preventDefault();
       const expanded = btn.classList.toggle('expanded');
       extras.forEach(el => { el.hidden = !expanded; });
-      btn.querySelector('svg').nextSibling.textContent = expanded ? ' Méně' : ' Číst více';
-    });
+      const textNode = Array.from(btn.childNodes).find(n => n.nodeType === 3 && n.textContent.trim());
+      if (textNode) textNode.textContent = expanded ? ' Méně' : ' Číst více';
+    }
+
+    btn.addEventListener('click', toggle);
+    btn.addEventListener('touchend', toggle, { passive: false });
   });
 
 });

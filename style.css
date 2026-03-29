@@ -17,7 +17,7 @@
   --color-primary-darker: #3e4c45;
   --color-text: #333333;
   --color-heading: #4a5a54;
-  --color-bg: #faf8f7;
+  --color-bg: #fdf9f7;
   --color-bg-alt: #f5f3f2;
   --color-bg-warm: #e7ebe8;
   --color-bg-card: #ffffff;
@@ -396,7 +396,7 @@ p {
 }
 
 .nav-link--cta {
-  background: var(--color-primary-dark) !important;
+  background: #7E968A !important;
   border: none !important;
   color: #fff !important;
   padding: 0.45rem var(--space-3) !important;
@@ -531,9 +531,9 @@ p {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(20, 32, 22, 0.68) 0%,
-    rgba(20, 32, 22, 0.46) 35%,
-    rgba(20, 32, 22, 0.12) 58%,
+    rgba(28, 18, 10, 0.62) 0%,
+    rgba(28, 18, 10, 0.38) 35%,
+    rgba(28, 18, 10, 0.08) 58%,
     transparent 72%
   );
   z-index: 2;
@@ -743,6 +743,7 @@ p {
   background-color: var(--color-bg);
 }
 
+
 .services-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -757,6 +758,7 @@ p {
   padding: 44px 44px 52px;
   background: #f3f7f4;
   border: 1px solid rgba(95, 109, 102, 0.28);
+  border-top: 2px solid rgba(95, 109, 102, 0.38);
   box-shadow: 0 4px 28px rgba(0, 0, 0, 0.06);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
@@ -764,6 +766,7 @@ p {
 .service-feature-card--pink {
   background: #f4eff2;
   border-color: rgba(150, 126, 138, 0.26);
+  border-top-color: rgba(150, 126, 138, 0.42);
 }
 
 @media (hover: hover) {
@@ -795,7 +798,7 @@ p {
   font-family: var(--font-heading);
   font-size: clamp(1.85rem, 3.5vw, 2.5rem);
   font-weight: 400;
-  color: var(--color-heading);
+  color: #3a4a44;
   line-height: 1.1;
   margin-bottom: var(--space-3);
   position: relative;
@@ -806,8 +809,8 @@ p {
   font-family: var(--font-heading);
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1rem, 1.8vw, 1.15rem);
-  color: var(--color-heading);
+  font-size: clamp(1.1rem, 1.8vw, 1.15rem);
+  color: #3a4a44;
   line-height: 1.65;
   margin-bottom: var(--space-5);
   max-width: 42ch;
@@ -825,7 +828,7 @@ p {
   position: relative;
   padding-left: 1rem;
   font-size: 0.95rem;
-  color: var(--color-text);
+  color: #2e2e2e;
   line-height: 1.75;
 }
 
@@ -838,6 +841,17 @@ p {
   height: 4px;
   border-radius: 50%;
   background-color: #967e8a;
+}
+
+@media (max-width: 480px) {
+  .service-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-intro {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 768px) {
@@ -944,7 +958,7 @@ p {
   transform: translate(50%, -50%);
   width: 300px;
   height: 300px;
-  opacity: 0.28;
+  opacity: 0.33;
   pointer-events: none;
   z-index: -1;
   animation: badge-spin 120s linear infinite;
@@ -1135,7 +1149,7 @@ p {
   gap: 6px;
   background: none;
   border: none;
-  padding: 0;
+  padding: 8px 0;
   margin-bottom: var(--space-5);
   font-size: 0.75rem;
   font-weight: 600;
@@ -1143,6 +1157,8 @@ p {
   text-transform: uppercase;
   color: #967e8a;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition: color var(--transition-fast);
 }
 
@@ -1229,7 +1245,7 @@ p {
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   color: var(--color-text);
   margin-bottom: var(--space-3);
 }
@@ -1281,7 +1297,7 @@ p {
   font-family: var(--font-heading);
   font-weight: 700;
   color: #9a7f8c;
-  font-size: 1.9rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
@@ -1601,7 +1617,7 @@ p {
   display: block;
   width: fit-content;
   margin: var(--space-2) auto 0;
-  background: var(--color-primary-dark);
+  background: #7E968A;
   color: #fff;
   font-family: var(--font-body);
   font-size: clamp(0.74rem, 1.4vw, 0.86rem);
