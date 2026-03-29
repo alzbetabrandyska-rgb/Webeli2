@@ -1292,11 +1292,18 @@ p {
   color: var(--color-heading);
 }
 
-.pricing-item-price,
-.pricing-item-price .price-num {
+.pricing-item-price {
   font-family: var(--font-heading);
   font-weight: 700;
   color: #9a7f8c;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.pricing-item-price .price-num {
   font-size: 2rem;
   line-height: 1;
 }
