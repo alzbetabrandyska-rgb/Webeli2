@@ -677,6 +677,8 @@ p {
   }
   .hero-bg img {
     object-position: center 15%;
+    filter: blur(5px);
+    transform: scale(1.05);
   }
   .hero-br-mobile {
     display: block;
@@ -686,6 +688,9 @@ p {
   }
   .hero-question--hide-mobile {
     display: none;
+  }
+  .hero .btn-primary {
+    border: 1.5px solid rgba(255, 255, 255, 0.75);
   }
 }
 
