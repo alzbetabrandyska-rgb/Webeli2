@@ -671,6 +671,9 @@ p {
     font-size: 0.76rem;
     padding: 9px 16px;
   }
+  .hero-bg img {
+    object-position: 68% 15%;
+  }
 }
 
 /* ==========================================================================
@@ -700,7 +703,11 @@ p {
 }
 
 .visual-break-full {
-  height: 320px;
+  height: 380px;
+}
+
+.visual-break-full--large {
+  height: 450px;
   overflow: hidden;
   position: relative;
 }
