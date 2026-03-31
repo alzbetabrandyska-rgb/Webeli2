@@ -691,7 +691,7 @@ p {
     display: none;
   }
   .hero-answer {
-    font-size: 1.25rem;
+    font-size: clamp(1.05rem, 5.5vw, 1.25rem);
   }
   .hero .btn-primary {
     border: 1.5px solid rgba(255, 255, 255, 0.75);
