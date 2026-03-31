@@ -691,7 +691,7 @@ p {
     display: none;
   }
   .hero-answer {
-    font-size: clamp(1.05rem, 5.5vw, 1.25rem);
+    font-size: 1.25rem;
   }
   .hero .btn-primary {
     border: 1.5px solid rgba(255, 255, 255, 0.75);
@@ -991,6 +991,12 @@ p {
   pointer-events: none;
   z-index: -1;
   animation: badge-spin 120s linear infinite;
+}
+
+@media (max-width: 1023px) {
+  .about-badge {
+    display: none;
+  }
 }
 
 .about-grid {
