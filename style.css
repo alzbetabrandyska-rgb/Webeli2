@@ -1449,6 +1449,9 @@ p {
   .faq-heading {
     text-align: center;
   }
+  .faq-heading .section-label {
+    justify-content: center;
+  }
   .faq-heading .section-label::before,
   .faq-heading .section-label::after {
     display: none;
