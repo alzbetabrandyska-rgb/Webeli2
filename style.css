@@ -690,6 +690,9 @@ p {
   .hero-question--hide-mobile {
     display: none;
   }
+  .hero-answer {
+    font-size: 1.25rem;
+  }
   .hero .btn-primary {
     border: 1.5px solid rgba(255, 255, 255, 0.75);
   }
