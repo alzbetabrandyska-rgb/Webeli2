@@ -103,7 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const answer = item.querySelector('.faq-answer');
 
     if (questionBtn && answer) {
-      questionBtn.addEventListener('click', () => {
+      function faqToggle(e) {
+        e.preventDefault();
         const isOpen = item.classList.contains('active');
 
         faqItems.forEach(other => {
@@ -124,6 +125,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           answer.style.maxHeight = null;
         }
+      }
+
+      let faqTouchFired = false;
+      questionBtn.addEventListener('touchend', (e) => {
+        faqTouchFired = true;
+        faqToggle(e);
+      }, { passive: false });
+      questionBtn.addEventListener('click', (e) => {
+        if (faqTouchFired) { faqTouchFired = false; return; }
+        faqToggle(e);
       });
     }
   });
@@ -197,8 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (textNode) textNode.textContent = expanded ? ' Méně' : ' Číst více';
     }
 
-    btn.addEventListener('click', toggle);
-    btn.addEventListener('touchend', toggle, { passive: false });
+    let touchFired = false;
+    btn.addEventListener('touchend', (e) => {
+      touchFired = true;
+      toggle(e);
+    }, { passive: false });
+    btn.addEventListener('click', (e) => {
+      if (touchFired) { touchFired = false; return; }
+      toggle(e);
+    });
   });
 
 });

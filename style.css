@@ -192,6 +192,7 @@ p {
 
 .section {
   padding: var(--space-10) 0;
+  scroll-margin-top: 80px;
 }
 
 .section-subtitle {
@@ -998,6 +999,11 @@ p {
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  .about-image-wrapper { order: 2; }
+  .about-text { order: 1; }
+}
+
 .about-image-wrapper {
   max-width: 380px;
   margin: 0 auto;
@@ -1437,6 +1443,19 @@ p {
 
 .faq-heading h2::after {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .faq-heading {
+    text-align: center;
+  }
+  .faq-heading .section-label::before,
+  .faq-heading .section-label::after {
+    display: none;
+  }
+  .faq-heading h2::after {
+    display: block;
+  }
 }
 
 .faq-grid {
