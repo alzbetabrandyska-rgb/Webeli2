@@ -1085,6 +1085,15 @@ p {
   margin-bottom: 0;
 }
 
+@media (max-width: 1023px) {
+  .about-text p {
+    font-size: clamp(1rem, 1.5vw, 1.08rem);
+    color: var(--color-heading);
+    opacity: 1;
+    line-height: 1.75;
+  }
+}
+
 .about-heading {
   font-size: clamp(2.0rem, 4vw, 3.2rem);
   font-weight: 500;
