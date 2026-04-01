@@ -696,6 +696,10 @@ p {
   .hero .btn-primary {
     border: 1.5px solid rgba(255, 255, 255, 0.75);
   }
+  .hero-content {
+    max-width: 88%;
+    width: 88%;
+  }
 }
 
 /* ==========================================================================
@@ -993,7 +997,7 @@ p {
   animation: badge-spin 120s linear infinite;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1280px) {
   .about-badge {
     display: none;
   }
