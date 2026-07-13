@@ -163,12 +163,30 @@ document.addEventListener('DOMContentLoaded', () => {
           form.style.display = 'none';
           formSuccess.style.display = 'block';
           form.reset();
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { form_id: 'contact-form' });
+          }
         } else {
           alert('Omlouváme se, zprávu se nepodařilo odeslat. Zkuste to prosím znovu nebo napište přímo na eli@webeli.cz.');
         }
       } catch (error) {
         alert('Omlouváme se, došlo k chybě. Zkuste to prosím znovu nebo napište přímo na eli@webeli.cz.');
       }
+    });
+  }
+
+  /* ---------- Sledování kliků na telefon a e-mail (GA4) ---------- */
+  if (typeof gtag === 'function') {
+    document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        gtag('event', 'phone_click', { link_url: link.getAttribute('href') });
+      });
+    });
+
+    document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        gtag('event', 'email_click', { link_url: link.getAttribute('href') });
+      });
     });
   }
 
