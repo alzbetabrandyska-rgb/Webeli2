@@ -893,6 +893,82 @@ p {
 }
 
 /* ==========================================================================
+   UKÁZKY WEBŮ
+   ========================================================================== */
+.portfolio {
+  background-color: var(--color-bg-alt);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.portfolio-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-device-frame {
+  width: 80%;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.9s ease;
+}
+
+.portfolio-device-frame.has-border {
+  border: 1px solid var(--color-border);
+}
+
+.portfolio-card.visible .portfolio-device-frame {
+  clip-path: inset(0% 0 0 0);
+}
+
+.portfolio-card:nth-child(3n+2) .portfolio-device-frame {
+  transition-delay: 150ms;
+}
+
+.portfolio-card:nth-child(3n+3) .portfolio-device-frame {
+  transition-delay: 300ms;
+}
+
+.portfolio-image-wrapper {
+  width: 100%;
+  height: 520px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.portfolio-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transition: object-position 5s linear;
+}
+
+@media (hover: hover) {
+  .portfolio-card:hover .portfolio-image-wrapper img {
+    object-position: 50% 100%;
+    transition: object-position 5s linear;
+  }
+}
+
+/* ==========================================================================
    SPOLUPRÁCE
    ========================================================================== */
 .cooperation {
@@ -1350,6 +1426,14 @@ p {
 .pricing-item-price .price-num {
   font-size: 2rem;
   line-height: 1;
+}
+
+@media (max-width: 999px) {
+  .pricing-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }
 
 .pricing-note {
@@ -1986,6 +2070,10 @@ p {
   .fade-in {
     opacity: 1;
     transform: none;
+  }
+
+  .portfolio-device-frame {
+    clip-path: inset(0% 0 0 0) !important;
   }
 
   .hero-scroll {
